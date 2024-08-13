@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
        <NavigationBar />
-      <div>Home</div>
+      <div style={{marginTop:'100px'}}>Home</div>
     </>
   )
 }
