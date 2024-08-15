@@ -7,18 +7,23 @@
 }
 
 body {
-    background-color: black;
+    background-color:black;
     color: white;
 }
 
 
 .container {
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
     margin-left: 15px;
     margin-right: 35px;
+    position: fixed;
+    font-size: 15px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.0),20%,transparent);
+    z-index: 1;
 }
 
 .logo-image {
@@ -68,8 +73,8 @@ body {
 
 .Sign-out {
     position: absolute;
-    top: 9%;
-    right: 2%;
+    top: 120%;
+    right: 0;
     width: max-content;
     background-color: #191919;
     padding: 18px;

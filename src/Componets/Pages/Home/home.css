@@ -1,0 +1,52 @@
+.hero-image{
+    position: static;
+}
+
+.hero-image img{
+    width: 110%;
+}
+
+.title-image{
+    position: absolute ;
+    bottom: 0;
+    width: 100%;
+    padding-left: 2%;
+}
+
+.title-image p{
+    max-width: 700px;
+}
+
+.container-btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn img{
+    width: 25px;   
+}
+
+.dark-btn{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.container-title-cards{
+    padding-left: 4%;
+}
