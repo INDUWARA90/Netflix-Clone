@@ -8,13 +8,17 @@
 
 .title-image{
     position: absolute ;
-    bottom: 0;
+    top: 18%;
     width: 100%;
     padding-left: 2%;
 }
 
-.title-image p{
+.About-hero-p{
+    font-size: small;
     max-width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: default;
 }
 
 .container-btn{

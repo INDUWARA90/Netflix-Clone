@@ -7,6 +7,7 @@ import herotitle from '../../../assets/hero_title.png'
 import PlayIcon from '../../../assets/play_icon.png'
 import InfoIcon from '../../../assets/info_icon.png'
 import TitleCard from '../../Title Card/TitleCard'
+import Footer from '../../Footer/Footer'
 
 
 
@@ -25,7 +26,7 @@ function Home() {
         </div>
         <div className="title-image">
           <img src={herotitle} alt="" />
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptates vero adipisci voluptatibus! Doloremque, soluta autem ullam officiis, voluptas nulla deleniti cumque dolor cum veniam eius, consectetur voluptatum sequi impedit.</p>
+          <p className='About-hero-p'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptates vero adipisci voluptatibus! Doloremque, soluta autem ullam officiis, voluptas nulla deleniti cumque dolor cum veniam eius, consectetur voluptatum sequi impedit.</p>
           <div className="container-btn">
             <button className='btn'><img src={PlayIcon} alt="" /><span>Play</span></button>
             <button className='btn dark-btn'><img src={InfoIcon} alt="" /><span>More Info</span></button>
@@ -44,6 +45,8 @@ function Home() {
         
       </div>
       
+      {/*=====Footer=====*/}
+      <Footer />
 
     </>
   )
