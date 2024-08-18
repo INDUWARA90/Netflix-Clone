@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './login.css'
 import logo from "../../../assets/logo.png";
 
 function Login() {
+
+  const [stateSign,setStateSign]=useState('Sign In');
+
   return (
-    <>
+    <div className='LOGIN'>
     <div className="logo">
         <img src={logo} alt="..." />
     </div>
       <div className="Container-From">
-        <h1>Sign In</h1>
+        <h1>{stateSign}</h1>
         <div className="body">
           <div className="inputs">
-            <input type="text" placeholder='Name' />
+            {stateSign==='Sign In'?<></>:<input type="text" placeholder='Name' />}
             <input type="text" placeholder='Email' />
             <input type="text" placeholder='Password' />
-            <button>Sign up</button>
+            <button>{stateSign}</button>
 
           </div>
           <div className="remeber-me-section">
@@ -30,13 +33,17 @@ function Login() {
             </div>
           </div>
           <div className="new-to-netfilx">
-            <p>New To Netfilx?  <span>Sign Up Now</span></p>
-            <p>Already have account ?  <span>Sign in Now</span></p>
+
+            {
+             stateSign==='Sign In'? <p>New To Netfilx?  <span onClick={()=>setStateSign('Sign Up')}>Sign Up Now</span></p>:
+             <p>Already have account ?  <span onClick={()=>setStateSign('Sign In')}>Sign in Now</span></p>
+            }
+        
           </div>
           
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

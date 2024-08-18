@@ -1,7 +1,8 @@
-body{
+.LOGIN{
     height: 100vh;
     background-image: linear-gradient(#0000007e,#0000007e),url('/src/assets/background_banner.jpg');
     padding: 20px 8%;
+    cursor: default;
 }
 
 .logo img{
@@ -9,7 +10,7 @@ body{
 }
 
 .Container-From{
-
+    
     width: 100%;
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -50,7 +51,7 @@ body{
 }
 
 .inputs button{
-    width: 100%;
+    width: 102%;
     height: 35px;
     color: white;
     font-weight: bold;
@@ -65,6 +66,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-top: 6px;
 }
 
 .check-box,
@@ -91,4 +93,9 @@ body{
 
 .check-box input{
     margin-right: 4px;
+}
+
+.new-to-netfilx span,
+.Need-help p{
+    cursor: pointer;
 }
