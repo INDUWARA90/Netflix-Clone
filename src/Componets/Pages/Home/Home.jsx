@@ -38,10 +38,10 @@ function Home() {
       {/*=====Title Cards=====*/}
       <div className="container-title-cards">
 
-        <TitleCard  name='Blockbuster Movies'  />
-        <TitleCard  name='Only on Netflix' />
-        <TitleCard  name='upcomming' />
-        <TitleCard  name='Top Pics for you' />
+        <TitleCard  name='Blockbuster Movies' type='popular' />
+        <TitleCard  name='Only on Netflix' type='now_playing' />
+        <TitleCard  name='upcomming'  type='upcoming'/>
+        <TitleCard  name='Top Pics for you' type='top_rated' />
         
       </div>
       
