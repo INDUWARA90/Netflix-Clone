@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './titleCard.css'
-import cards_data from '../../assets/cards/Cards_data'
+
 
 function TitleCard({name,type}) {
 
